@@ -5,17 +5,21 @@
 //  // (think `Number(value)`) in order to process them.
 // // * Your output should be injected into the answer element
 
-//declare variables (there are four of them)
+var num1 = document.querySelector('#num_one');
+var num2 = document.querySelector('#num_two');
+var button = document.querySelector('#calculateBtn');
+var answer = document.querySelector('#answer');
 
-var = num1, num2, button, answer
+function add() {
+	return (Number(num1.value) + Number(num2.value));
+}
 
-//elements
+function print() {
+	answer.textContent = add();
+}
 
-num1 = document.querySelector('num_1');
-num2 = document.querySelector('num_2');
-button = document.querySelector('calculateBtn');
-answer = document.querySelector('answer');
+button.addEventListener('click', print);
 
-//do the math
 
-// get the answer
+
+
